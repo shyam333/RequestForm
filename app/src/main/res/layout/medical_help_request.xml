@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_marginTop="8sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Patient Name" />
+
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textview1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtage"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtname"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:maxLength="2" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/edtage"
+        android:layout_alignEnd="@+id/edtname"
+        android:layout_alignRight="@+id/edtname"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/edtage"
+        android:layout_toRightOf="@+id/edtage" />
+
+    <EditText
+        android:id="@+id/edtpbm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/edtage"
+        android:layout_alignStart="@+id/edtage"
+        android:layout_below="@+id/edtage"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Problem"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtamt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/edtpbm"
+        android:layout_alignLeft="@+id/edtpbm"
+        android:layout_alignRight="@+id/edtpbm"
+        android:layout_alignStart="@+id/edtpbm"
+        android:layout_below="@+id/edtpbm"
+        android:ems="10"
+        android:digits="0123456789,"
+        android:hint="Amount Required"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edtdate"
+        android:layout_alignRight="@+id/edtdate"
+        android:layout_below="@+id/edtamt"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Due Date" />
+
+    <EditText
+        android:id="@+id/edtdate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textview2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtaddrss"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtdate"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Current Location"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtmob"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edtaddrss"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Mobile"
+        android:maxLength="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtphn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/edtmob"
+        android:layout_alignRight="@+id/edtmob"
+        android:layout_below="@+id/edtmob"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:maxLength="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtdetails"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtphn"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Write some details"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/sharebtn"
+        android:background="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edtdetails"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="SHARE" />
+
+
+</RelativeLayout>
