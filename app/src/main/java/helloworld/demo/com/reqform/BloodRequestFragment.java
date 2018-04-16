@@ -31,6 +31,7 @@ Spinner spinner1,spinner2;
 EditText edtname,bloodamt,selectdate,location,mobile,phone,details;
 TextView name,duedate;
 
+//CALENDAR
 final Calendar myCalendar = Calendar.getInstance();
 
     public BloodRequestFragment() {

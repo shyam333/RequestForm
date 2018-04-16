@@ -46,10 +46,7 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-
-
-
-
+    //FRAGMENT OPERATIONS
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
